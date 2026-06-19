@@ -16,7 +16,7 @@ if not exist "%SCRIPT_PATH%" (
     exit /b 1
 )
 
-reg add "HKCR\exefile\shell\MyGameTool" /ve /d "Run Game Tool" /f >nul
+reg add "HKCR\exefile\shell\MyGameTool" /ve /d "Run Nvite Patcher" /f >nul
 reg add "HKCR\exefile\shell\MyGameTool" /v "Icon" /d "cmd.exe" /f >nul
 reg add "HKCR\exefile\shell\MyGameTool\command" /ve /d "cmd /k py \"%SCRIPT_PATH%\" \"%%1\"" /f >nul
 
