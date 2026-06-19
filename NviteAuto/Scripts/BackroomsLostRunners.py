@@ -30,7 +30,7 @@ def VersionUpdater(exe_path: str):
     """Copies the DLL from the A folder into the game's Steamworks directory."""
 
     game_dir = os.path.dirname(exe_path)
-    dest_dir = os.path.join(game_dir, "Engine", "Binaries", "ThirdParty", "Steamworks", "Steamv157")
+    dest_dir = os.path.join(game_dir, "Engine", "Binaries", "ThirdParty", "Steamworks", "Steamv157", "Win64")
     dest_file = os.path.join(dest_dir, DLL_FILENAME)
     source_file = os.path.join(INSTALL_DIR, "A", DLL_FILENAME)
 
